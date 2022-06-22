@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{6D2BD9BD-8C41-4E00-AD0C-11EA4B3D6A8A}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>mARkIt.iOS</RootNamespace>
+    <AssemblyName>mARkIt.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: danashviro@gmail.com (2D2839FPCL)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>61507</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>iOS Team Provisioning Profile: com.ar.mark</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: danashviro@gmail.com (2D2839FPCL)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>40016</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>iOS Team Provisioning Profile: com.ar.mark</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.Auth, Version=1.6.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Auth.1.7.0\lib\Xamarin.iOS10\Xamarin.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Auth.Extensions, Version=1.6.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Auth.Extensions.1.7.0\lib\Xamarin.iOS10\Xamarin.Auth.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Wikitude.SDK.JS.iOS">
+      <HintPath>..\packages\Xamarin.Wikitude.SDK.JS.8.7.0\lib\xamarinios10\Xamarin.Wikitude.SDK.JS.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Json" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Windows.Core">
+      <HintPath>..\packages\PInvoke.Windows.Core.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Windows.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.Kernel32">
+      <HintPath>..\packages\PInvoke.Kernel32.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.Kernel32.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.BCrypt">
+      <HintPath>..\packages\PInvoke.BCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.BCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="PInvoke.NCrypt">
+      <HintPath>..\packages\PInvoke.NCrypt.0.3.2\lib\portable-net45+win+wpa81+MonoAndroid10+xamarinios10+MonoTouch10\PInvoke.NCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\packages\Validation.2.2.8\lib\dotnet\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\packages\PCLCrypto.2.0.147\lib\xamarinios10\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Mobile.Client">
+      <HintPath>..\packages\Microsoft.Azure.Mobile.Client.4.1.1\lib\xamarinios10\Microsoft.Azure.Mobile.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\packages\Syncfusion.Licensing.17.2.0.35\lib\Xamarin.iOS10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Buttons.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.Buttons.IOS.17.2.0.35\lib\Xamarin.iOS10\Syncfusion.Buttons.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfRating.iOS">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfRating.IOS.17.2.0.35\lib\Xamarin.iOS10\Syncfusion.SfRating.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\packages\Xamarin.Essentials.1.2.0\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mARkIt\mARkIt.csproj">
+      <Project>{75C40354-C608-4CD6-8FA6-606A9EB1A715}</Project>
+      <Name>mARkIt</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\40-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\120-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="CoreServices\ArExperienceAuthorizationController.cs" />
+    <Compile Include="Notifications\IOSLocalNotification.cs" />
+    <Compile Include="Notifications\IOSMarksScanner.cs" />
+    <Compile Include="ViewControllers\ARViewController.cs" />
+    <Compile Include="ViewControllers\ARViewController.designer.cs">
+      <DependentUpon>ARViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MapViewController.cs" />
+    <Compile Include="ViewControllers\MapViewController.designer.cs">
+      <DependentUpon>MapViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\AddAMarkViewController.cs" />
+    <Compile Include="ViewControllers\AddAMarkViewController.designer.cs">
+      <DependentUpon>AddAMarkViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SettingsViewController.cs" />
+    <Compile Include="ViewControllers\SettingsViewController.designer.cs">
+      <DependentUpon>SettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\SignInViewController.cs" />
+    <Compile Include="ViewControllers\SignInViewController.designer.cs">
+      <DependentUpon>SignInViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MyMarksViewController.cs" />
+    <Compile Include="ViewControllers\MyMarksViewController.designer.cs">
+      <DependentUpon>MyMarksViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\MarkViewController.cs" />
+    <Compile Include="ViewControllers\MarkViewController.designer.cs">
+      <DependentUpon>MarkViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\Alert.cs" />
+    <Compile Include="CustomControls\MarkTableViewCell.cs" />
+    <Compile Include="CustomControls\MarkTableViewCell.designer.cs">
+      <DependentUpon>MarkTableViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\InitViewController.cs" />
+    <Compile Include="ViewControllers\InitViewController.designer.cs">
+      <DependentUpon>InitViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewControllers\RateViewController.cs" />
+    <Compile Include="ViewControllers\RateViewController.designer.cs">
+      <DependentUpon>RateViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\MarkAnnotation.cs" />
+    <Compile Include="ViewControllers\TabBarController.cs" />
+    <Compile Include="ViewControllers\TabBarController.designer.cs">
+      <DependentUpon>TabBarController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notifications\UserNotificationCenterDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ARPages\ade.js" />
+    <BundleResource Include="Resources\ARPages\ARPage\assets\indi.png" />
+    <BundleResource Include="Resources\ARPages\ARPage\assets\woodSign.png" />
+    <BundleResource Include="Resources\ARPages\ARPage\index.html" />
+    <BundleResource Include="Resources\ARPages\ARPage\js\jquery-2.0.3.min.js" />
+    <BundleResource Include="Resources\ARPages\ARPage\js\marker.js" />
+    <BundleResource Include="Resources\ARPages\ARPage\js\explore.js" />
+    <BundleResource Include="Resources\Icons\EyeIcon\eyeIcon.png" />
+    <BundleResource Include="Resources\Icons\EyeIcon\eyeIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\EyeIcon\eyeIcon%403x.png" />
+    <BundleResource Include="Resources\Icons\MapsIcon\mapsIcon.png" />
+    <BundleResource Include="Resources\Icons\MapsIcon\mapsIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\MapsIcon\mapsIcon%403x.png" />
+    <BundleResource Include="Resources\Icons\MapIcon\map.png" />
+    <BundleResource Include="Resources\Icons\MapIcon\map%402x.png" />
+    <BundleResource Include="Resources\Icons\MapIcon\map%403x.png" />
+    <BundleResource Include="Resources\Icons\DottedSettingsIcon\DottedSettingsIcon.png" />
+    <BundleResource Include="Resources\Icons\DottedSettingsIcon\DottedSettingsIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\DottedSettingsIcon\DottedSettingsIcon%403x.png" />
+    <BundleResource Include="Resources\Icons\DottedEyeIcon\DottedEyeIcon.png" />
+    <BundleResource Include="Resources\Icons\DottedEyeIcon\DottedEyeIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\DottedEyeIcon\DottedEyeIcon%403x.png" />
+    <BundleResource Include="Resources\Icons\DottedMapIcon\DottedMapIcon.png" />
+    <BundleResource Include="Resources\Icons\DottedMapIcon\DottedMapIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\DottedMapIcon\DottedMapIcon%403x.png" />
+    <BundleResource Include="Resources\Icons\FBLogin.png" />
+    <BundleResource Include="Resources\Icons\faceboogLogin.png" />
+    <BundleResource Include="Resources\Icons\FBLoginIcon.png" />
+    <BundleResource Include="Resources\Icons\AppIcon76.png" />
+    <BundleResource Include="Resources\Icons\AppIcon55.png" />
+    <BundleResource Include="Resources\Icons\circle.png" />
+    <BundleResource Include="Resources\markStyles\schoolBoardAddMark.png" />
+    <BundleResource Include="Resources\markStyles\metalSignAddMark.png" />
+    <BundleResource Include="Resources\markStyles\woodSignAddMark.png" />
+    <BundleResource Include="Resources\Icons\login_buttons\facebook_360_60.png" />
+    <BundleResource Include="Resources\Icons\login_buttons\google_360_60.png" />
+    <BundleResource Include="Resources\Icons\login_buttons\facebook_258_38.png" />
+    <BundleResource Include="Resources\Icons\login_buttons\google_258_38.png" />
+    <BundleResource Include="Resources\Icons\appIcon_240_240.png" />
+    <BundleResource Include="Resources\Icons\appIcon_291_291.png" />
+    <BundleResource Include="Resources\appIcon_291_291.png" />
+    <BundleResource Include="Resources\Icons\ListIcon\DottedListIcon.png" />
+    <BundleResource Include="Resources\Icons\ListIcon\DottedListIcon%402x.png" />
+    <BundleResource Include="Resources\Icons\ListIcon\DottedListIcon%403x.png" />
+    <BundleResource Include="Resources\ARPages\ARPage\assets\metalSign.png" />
+    <BundleResource Include="Resources\ARPages\ARPage\assets\schoolSign.png" />
+    <BundleResource Include="Resources\mapPins\Food.png" />
+    <BundleResource Include="Resources\mapPins\History.png" />
+    <BundleResource Include="Resources\mapPins\Nature.png" />
+    <BundleResource Include="Resources\mapPins\Sport.png" />
+    <BundleResource Include="Resources\mapPins\General.png" />
+    <BundleResource Include="Resources\Icons\circle46.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
