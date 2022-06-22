@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#074c5f">
+	<TextView
+        android:textColor="@android:color/white"
+		android:text="Catagories"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/CatagoriestextView" />
+	<CheckBox
+        android:textColor="@android:color/white"
+		android:text="General"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/GeneralCheckBox" />
+	<CheckBox
+        android:textColor="@android:color/white"
+		android:text="Food"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/FoodCheckBox" />
+	<CheckBox
+        android:textColor="@android:color/white"
+		android:text="History"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/HistoryCheckBox" />
+	<CheckBox
+        android:textColor="@android:color/white"
+		android:text="Sport"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/SportCheckBox" />
+	<CheckBox
+        android:textColor="@android:color/white"
+		android:text="Nature"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/NatureCheckBox" />
+	<Button
+        android:textColor="@android:color/black"
+		android:text="Save"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/SaveButton" />
+	<Button
+        android:textColor="@android:color/black"        
+	    android:id="@+id/logout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout" />
+</LinearLayout>

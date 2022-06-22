@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#053a48">
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="-25dp"
+
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:src="@drawable/MainLogo" />
+
+    <TextView
+        android:id="@+id/markit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingVertical="-25dp"
+        android:text="mARk-It"
+        android:layout_below="@id/main_logo"
+        android:textColor="@android:color/white"
+        android:textSize="36dp" />
+
+</RelativeLayout >

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px"
+    android:background="#053A48">
+	<TextView
+        android:textColor="@android:color/white"
+		android:text="Message:"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView1" />
+	<EditText
+        android:textColor="@android:color/white"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/MarkMessageEditText" />
+	<TextView
+        android:textColor="@android:color/white"
+		android:text="Letters: 0"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/LettersTextView"/>
+		<TextView
+        android:textColor="@android:color/white"
+		android:text="Category"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView2" />
+
+	<RadioGroup
+        android:textColor="@android:color/white"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/radioGroup1">			
+	<RadioButton
+        android:textColor="@android:color/white"
+		android:text="General"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:checked="true"
+		android:id="@+id/GeneralRadioButton" />
+	<RadioButton
+        android:textColor="@android:color/white"
+		android:text="Food"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/FoodRadioButton" />
+	<RadioButton
+        android:textColor="@android:color/white"
+		android:text="History"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/HistoryRadioButton" />
+	<RadioButton
+        android:textColor="@android:color/white"
+		android:text="Sport"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/SportRadioButton" />
+	<RadioButton
+        android:textColor="@android:color/white"
+	    android:text="Nature"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/NatureRadioButton"/>
+
+	</RadioGroup>
+
+	<TextView
+        android:textColor="@android:color/white"
+		android:text="mARk style"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView3" />
+
+	<RadioGroup
+        android:textColor="@android:color/white"
+	    android:id="@+id/radioGroup1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" >
+
+    <RadioButton
+        android:textColor="@android:color/white"
+        android:id="@+id/WoodRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:drawableRight="@drawable/woodSignAddMark"
+        android:checked="true" />
+
+    <RadioButton
+        android:textColor="@android:color/white"
+        android:id="@+id/MetalRadioButton"
+        android:drawableRight="@drawable/metalSignAddMark" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false" />
+
+    <RadioButton
+        android:textColor="@android:color/white"
+        android:id="@+id/SchoolRadioButton"
+	    android:drawableRight="@drawable/schoolBoardAddMark" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false" />
+</RadioGroup>
+	<Button
+        android:textColor="@android:color/black"
+		android:text="Save"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/SaveButton"/>
+</LinearLayout>
